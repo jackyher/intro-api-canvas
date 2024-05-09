@@ -4,22 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
     <title>Intro Canvas 2D</title>
 </head>
 <body>
+    <header>
+        <nav class="navbar navbar-light navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand small-text">
+                    <img src="media/contenido-web.png" alt="" width="30" height="25" class="d-inline-block align-text-top"/>
+                    <span class="brand-with-image">Introducción a canvas 2D</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
     <main class="container flex-column mt-3 shadow rounded-3 p-2">
         <div class="d-flex justify-content-center flex-row mb-3">
-            <h1>Ejemplos de objetos 2D en canvas</h1>
+            <h1 class="fs-3 fw-bold">Ejemplos de objetos 2D en canvas</h1>
         </div>
-        <div class="d-flex flex-row mb-2 shadow-sm p-3 justify-content-around">
-            <canvas class="border shadow" id="canvasRectangule" width="150" height="150"></canvas>
-            <canvas class="border shadow" id="canvasTriangule" width="150" height="150"></canvas>
-            <canvas class="border shadow" id="canvasTrianguleEqui" width="150" height="150"></canvas>
-            <canvas class="border shadow" id="canvasFeather" width="150" height="150"></canvas>
-            <canvas class="border shadow" id="canvasLines" width="150" height="150"></canvas>
+        <div class="shadow-sm p-3">
+            <div class="d-flex flex-row mb-2 justify-content-around">
+                <div class="custom-border rounded-3 p-2">
+                    <p class="text-center underline">Rectángulo</p>
+                    <canvas id="canvasRectangule" width="150" height="150"></canvas>
+                </div>
+                <div class="custom-border rounded-3 p-2">
+                    <p class="text-center underline">Triángulo</p>
+                    <canvas id="canvasTriangule" width="150" height="150"></canvas>
+                </div>
+                <div class="custom-border rounded-3 p-2">
+                    <p class="text-center underline">Carita Feliz</p>
+                    <canvas id="canvasFeather" width="150" height="150"></canvas>
+                </div>
+                <div class="custom-border rounded-3 p-2">
+                    <p class="text-center underline">Líneas</p>
+                    <canvas id="canvasLines" width="150" height="150"></canvas>
+                </div>
+            </div>
+            <div class="d-flex flex-row mb-2 justify-content-around p-3">
+                <div class="custom-border rounded-3 p-2">
+                    <p class="text-center underline">Arcos</p>
+                    <canvas id="canvasBow" width="150" height="150"></canvas>
+                </div>
+                <div class="custom-border rounded-3 p-2">
+                    <p class="text-center underline">Curvas Bézier</p>
+                    <canvas id="canvasCurveBezier" width="150" height="150"></canvas>
+                </div>
+                <div class="custom-border rounded-3 p-2">
+                    <p class="text-center underline">Curvas Cúbicas</p>
+                    <canvas id="canvasCurveCubic" width="150" height="150"></canvas>
+                </div>
+                <div class="custom-border rounded-3 p-2">
+                    <p class="text-center underline">Path 2D</p>
+                    <canvas id="canvasPath2D" width="150" height="150"></canvas>
+                </div>
+            </div>
         </div>
     </main>
 
+    <footer class="footer container mt-4">
+        <div class="container text-center">
+            <p style="font-size: 0.85rem;">&copy; 2024 Todos los derechos reservados. Jacqueline Hernández.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
